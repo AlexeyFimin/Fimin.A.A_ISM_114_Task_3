@@ -24,7 +24,14 @@ public:
  * @brief конструктор с параметрами
  *
  */
+
+    ~Point() = default;
+    /**
+ * @brief дефолтный деструктор
+ *
+ */
 };
+
 
 class Vector {
     friend class Triangle;
@@ -66,6 +73,12 @@ public:
     double ScalarProduct(const Vector& other) const;
     /**
  * @brief результат скалярного произведения
+ *
+ */
+
+    ~Vector() = default;
+    /**
+ * @brief дефолтный деструктор
  *
  */
 };
@@ -144,6 +157,12 @@ public:
  * @brief приведение треугольника к string
  *
  */
+
+    ~Triangle() = default;
+    /**
+ * @brief дефолтный деструктор
+ *
+ */
 };
 
 
@@ -162,4 +181,11 @@ public:
  * @brief взятие площади
  *
  */
-};
+
+    ~Equilateral() = default;
+    /**
+ * @brief дефолтный деструктор
+ *
+ */
+
+}
